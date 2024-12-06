@@ -4,28 +4,27 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="Rein">
-  <meta property="og:title" content="Rein"/>
-  <meta property="og:description" content="[CVPR 2024] Stronger, Fewer, & Superior: Harnessing Vision Foundation Models for Domain Generalized Semantic Segmentation"/>
+  <meta name="description" content="SoRA">
+  <meta property="og:title" content="SoRA"/>
+  <meta property="og:description" content="SoRA: Singular Value Decomposed Low-Rank Adaptation for Domain Generalizable Representation Learning"/>
   <meta property="og:url" content="https://seunghyechae.github.io/test-pp/" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="../images/rein.png" />
+  <meta property="og:image" content="../images/teaser.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="Rein">
-  <meta name="twitter:description" content="[CVPR 2024] Stronger, Fewer, & Superior: Harnessing Vision Foundation Models for Domain Generalized Semantic Segmentation">
+  <meta name="twitter:title" content="SoRA">
+  <meta name="twitter:description" content="SoRA: Singular Value Decomposed Low-Rank Adaptation for Domain Generalizable Representation Learning">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="../images/rein.png">
+  <meta name="twitter:image" content="../images/teaser.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="Rein">
+  <meta name="keywords" content="SoRA">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>[CVPR 2024] Rein</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>DG-SoRA</title>
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -54,30 +53,22 @@
           SoRA: Singular Value Decomposed Low-Rank Adaptation <br>
           for Domain Generalizable Representation Learning
         </h1>
-      
-        <div class="is-size-5 publication-authors" style="margin-top: 20px;">
+        <div class="is-size-5 publication-authors" style="margin-top: 30px;">
           <!-- Paper authors -->
-          <span class="author-block">
-            <a href="https://zxwei.site" target="_blank">Zhixiang Wei</a><sup>*</sup>,</span>
             <span class="author-block">
-              <a href="https://lin-chen.site" target="_blank">Lin Chen</a><sup>*</sup>,</span>
-              <span class="author-block">
-                Yi Jin*, Xiaoxiao Ma, Tianle Liu, Pengyang Ling, Ben Wang, Huaian Chen, Jinjin Zheng
-              </span>
-              </div>
-              <div class="is-size-5 publication-authors">
-                <div class="author-block"><sup>1&nbsp;</sup>University of Science and Technology of China</div>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <div class="author-block"><sup>2&nbsp;</sup>Shanghai AI Laboratory</div><br>
-                <span class="author-block"><br>CVPR 2024</span>
-                <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+              Seokju Yun, Seunghye Chae, Dongheon Lee, Youngmin Ro
+            </span>
+            </div>
+
+              <div class="is-size-5 publication-authors" style="margin-top: 20px;">
+                <div class="author-block"></sup>Machine Intelligence Laboratory, University of Seoul, Korea</div>
               </div>
 
               <div class="column has-text-centered">
                 <div class="publication-links">
                      <!-- Arxiv PDF link -->
                   <span class="link-block">
-                    <a href="https://arxiv.org/pdf/2312.04265.pdf" target="_blank"
+                    <a href="https://arxiv.org/pdf/2412.04077.pdf" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -99,7 +90,7 @@
 
               <!-- Github link -->
               <span class="link-block">
-                <a href="https://github.com/w1oves/Rein" target="_blank"
+                <a href="https://github.com/ysj9909/DG-SoRA" target="_blank"
                 class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
                   <i class="fab fa-github"></i>
@@ -110,7 +101,7 @@
 
             <!-- ArXiv abstract Link -->
             <span class="link-block">
-              <a href="https://arxiv.org/abs/2312.04265" target="_blank"
+              <a href="https://arxiv.org/abs/2412.04077" target="_blank"
               class="external-link button is-normal is-rounded is-dark">
               <span class="icon">
                 <i class="ai ai-arxiv"></i>
@@ -123,175 +114,52 @@
     </div>
   </div>
 </section>
-
-
+  
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="https://github.com/w1oves/Rein/releases/download/Videos/all.mp4"
+        <source src="https://github.com/ysj9909/DG-SoRA/releases/download/videos/rain.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Trained on Cityscapes, <b>Rein</b> generalizes to <b>unseen</b> driving scenes and cities:
-        <br>Nighttime Shanghai, Foggy Countryside, and Rainy Hollywood.
+        SoRA, <b>trained solely on synthetic datasets</b>, demonstrates robust prediction capabilities even in highly challenging unseen driving scenarios.
       </h2>
     </div>
   </div>
 </section>
 <!-- End teaser video -->
 
+
+  <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Overview</h2>
+      <img  src="static/images/teaser.png" width="100%" height="550">
+      </img>
+      </div>
+    </div>
+  </section>
+
+
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">              
           <p>
-            In this paper, we first assess and harness various Vision Foundation Models (VFMs) in the context of Domain Generalized Semantic Segmentation (DGSS). Driven by the motivation that Leveraging Stronger pre-trained models and Fewer trainable parameters for Superior generalizability, we introduce a robust fine-tuning approach, namely Rein, to parameter-efficiently harness VFMs for DGSS. Built upon a set of trainable tokens, each linked to distinct instances, Rein precisely refines and forwards the feature maps from each layer to the next layer within the backbone. This process produces diverse refinements for different categories within a single image. With fewer trainable parameters, Rein efficiently fine-tunes VFMs for DGSS tasks, surprisingly surpassing full parameter fine-tuning. Extensive experiments across various settings demonstrate that Rein significantly outperforms state-of-the-art methods. Remarkably, with just an extra 1% of trainable parameters within the frozen backbone, Rein achieves a mIoU of 78.4% on the Cityscapes, without accessing any real urban-scene datasets.
+            Domain generalization (DG) aims to adapt a model using one or multiple source domains to ensure robust performance in unseen target domains. Recently, Parameter-Efficient Fine-Tuning (PEFT) of foundation models has shown promising results in the context of DG problem. Nevertheless, existing PEFT methods still struggle to strike a balance between preserving generalizable components of the pre-trained model and learning task-specific features. To gain insights into the distribution of generalizable components, we begin by analyzing the pre-trained weights  through the lens of singular value decomposition. Building on these insights, we introduce Singular Value Decomposed Low-Rank Adaptation (SoRA), an approach that selectively tunes minor singular components while keeping the residual parts frozen. SoRA effectively retains the generalization ability of the pre-trained model while efficiently acquiring task-specific skills. Furthermore, we freeze domain-generalizable blocks and employ an annealing weight decay strategy, thereby achieving an optimal balance in the delicate trade-off between generalizability and discriminability.  SoRA attains state-of-the-art results on multiple benchmarks that span both domain generalized semantic segmentation to domain generalized object detection. In addition, our methods introduce no additional inference overhead or regularization loss, maintain compatibility with any backbone or head, and are designed to be versatile, allowing easy integration into a wide range of tasks.
           </p>
-          <a href="https://paperswithcode.com/sota/domain-adaptation-on-cityscapes-to-acdc?p=stronger-fewer-superior-harnessing-vision">
-            <img src="https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/stronger-fewer-superior-harnessing-vision/domain-adaptation-on-cityscapes-to-acdc" alt="SOTA Domain Adaptation on Cityscapes to ACDC">
-          </a>
-          <a href="https://paperswithcode.com/sota/domain-generalization-on-gta-to-avg?p=stronger-fewer-superior-harnessing-vision">
-            <img src="https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/stronger-fewer-superior-harnessing-vision/domain-generalization-on-gta-to-avg" alt="SOTA Domain Generalization on GTA to AVG">
-          </a>
-          <a href="https://paperswithcode.com/sota/domain-generalization-on-gta5-to-cityscapes?p=stronger-fewer-superior-harnessing-vision">
-            <img src="https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/stronger-fewer-superior-harnessing-vision/domain-generalization-on-gta5-to-cityscapes" alt="SOTA Domain Generalization on GTA5 to Cityscapes">
-          </a>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- End paper abstract -->
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/8fd046f2-e41d0000.jpg" alt="night"/>
-        <h2 class="subtitle has-text-centered">
-          Inference on unseen <b>night</b> image.
-        </h2>
-       </div>
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/GOPR0477_frame_000949_rgb_anon.png" alt="foggy"/>
-        <h2 class="subtitle has-text-centered">
-          Inference on unseen <b>foggy</b> image.
-        </h2>
-       </div>
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/GOPR0572_frame_000501_rgb_anon.png" alt="rainy"/>
-        <h2 class="subtitle has-text-centered">
-         Inference on unseen <b>rainy</b> image.
-       </h2>
-       </div>
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/GOPR0494_frame_000134_rgb_anon.png" alt="snowy"/>
-        <h2 class="subtitle has-text-centered">
-          Inference on unseen <b>snowy</b> image.
-        </h2>
-       </div>
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/nightbdd.jpg" alt="night"/>
-        <h2 class="subtitle has-text-centered">
-          Inference on unseen <b>night</b> image.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/GOPR0478_frame_000526_rgb_anon.png" alt="foggy"/>
-        <h2 class="subtitle has-text-centered">
-          Inference on unseen <b>foggy</b> image.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/GOPR0572_frame_000995_rgb_anon.png" alt="rainy"/>
-        <h2 class="subtitle has-text-centered">
-         Inference on unseen <b>rainy</b> image.
-       </h2>
-      </div>
-      <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/GOPR0494_frame_000284_rgb_anon.png" alt="snowy"/>
-      <h2 class="subtitle has-text-centered">
-        Inference on unseen <b>snowy</b> image.
-      </h2>
-      </div>
-      <div class="item">
-      <!-- Your image here -->
-        <img src="static/images/GOPR0594_frame_000193_rgb_anon.png" alt="night"/>
-        <h2 class="subtitle has-text-centered">
-          Inference on unseen <b>night</b> image.
-        </h2>
-      </div>
-  </div>
- </div>
-</div>
-</section>
-<!-- End image carousel -->
-
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Overview</h2>
-      <img  src="static/images/rein.png" width="100%" height="550">
-      </img>
-      </div>
-    </div>
-  </section>
-
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Framework</h2>
-      <img  src="static/images/framework.png" width="100%" height="550">
-      </img>
-      </div>
-    </div>
-  </section>
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <img  src="static/images/poster.png" width="100%" height="550">
-          </img>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@InProceedings{Wei_2024_CVPR,
-    author    = {Wei, Zhixiang and Chen, Lin and Jin, Yi and Ma, Xiaoxiao and Liu, Tianle and Ling, Pengyang and Wang, Ben and Chen, Huaian and Zheng, Jinjin},
-    title     = {Stronger Fewer \& Superior: Harnessing Vision Foundation Models for Domain Generalized Semantic Segmentation},
-    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {June},
-    year      = {2024},
-    pages     = {28619-28630}
-}</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
 
 
   <footer class="footer">
